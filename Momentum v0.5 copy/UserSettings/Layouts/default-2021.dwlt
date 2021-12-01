@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1007
   m_ShowMode: 4
-  m_Title: Game
+  m_Title: Scene
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 100
+  controlID: 99
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -224,7 +224,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 101
+  controlID: 100
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -249,7 +249,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 102
+  controlID: 101
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -346,13 +346,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Materials
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Materials
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\fdmcp\OneDrive\Documents\GitHub\itsmomentum\Momentum
     v0.5 copy
@@ -360,9 +360,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 31}
-    m_SelectedIDs: f46a0000
-    m_LastClickedID: 27380
-    m_ExpandedIDs: 00000000f46a000000ca9a3b
+    m_SelectedIDs: 94610000
+    m_LastClickedID: 24980
+    m_ExpandedIDs: 000000007a61000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -390,7 +390,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f46a0000
+    m_ExpandedIDs: 000000007a610000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -517,10 +517,10 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 821bfdff
-      m_LastClickedID: -189566
-      m_ExpandedIDs: acfefdff002bffffb0f8fffff6faffff7a650000
+      scrollPos: {x: 0, y: 131}
+      m_SelectedIDs: 5c730000
+      m_LastClickedID: 29532
+      m_ExpandedIDs: c6f8ffff1cfbffff72710000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -769,9 +769,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -176.05759, y: 10.578922, z: -387.71884}
+    m_Target: {x: -147.99121, y: 23.043, z: -368.66876}
     speed: 2
-    m_Value: {x: -176.05759, y: 10.578922, z: -387.71884}
+    m_Value: {x: -147.99121, y: 23.043, z: -368.66876}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -818,11 +818,11 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.0053020087, y: 0.9754385, z: -0.026801929, w: 0.21956268}
+    m_Target: {x: 0.0015117152, y: -0.9987202, z: 0.04378389, w: 0.03479043}
     speed: 2
-    m_Value: {x: 0.0053008576, y: 0.97522664, z: -0.026796108, w: 0.219515}
+    m_Value: {x: 0.0014591704, y: -0.99849933, z: 0.042273674, w: 0.034782715}
   m_Size:
-    m_Target: 10
+    m_Target: 3.0580063
     speed: 2
     m_Value: 10
   m_Ortho:
@@ -900,8 +900,8 @@ MonoBehaviour:
     vZoomLockedByDefault: 0
     m_HBaseRangeMin: -550.5
     m_HBaseRangeMax: 550.5
-    m_VBaseRangeMin: -262.5
-    m_VBaseRangeMax: 262.5
+    m_VBaseRangeMin: -273
+    m_VBaseRangeMax: 273
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -918,11 +918,11 @@ MonoBehaviour:
     m_DrawArea:
       serializedVersion: 2
       x: 0
-      y: 21
+      y: 0
       width: 1101
-      height: 525
+      height: 546
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 550.5, y: 262.5}
+    m_Translation: {x: 550.5, y: 273}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
@@ -930,9 +930,9 @@ MonoBehaviour:
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
       x: -550.5
-      y: -262.5
+      y: -273
       width: 1101
-      height: 525
+      height: 546
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1101, y: 546}
