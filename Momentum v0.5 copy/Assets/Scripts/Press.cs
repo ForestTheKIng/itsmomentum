@@ -14,11 +14,5 @@ public class Press : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        void OnCollisionEnter(Collision collision) {
-            foreach (ContactPoint contact in collision.contacts)
-            {
-                Debug.Log("reee");
-            }
-        }
     }
 }

@@ -6,15 +6,5 @@ public class MoveCamera : MonoBehaviour {
 
     void Update() {
         transform.position = player.transform.position;
-
-        if (Input.GetKeyDown("w"))
-        {
-            Debug.Log("ree");
-        }
-
-        if (Input.GetKeyUp("w"))
-        {
-            Debug.Log("reesir");
-        }
     }
 }
