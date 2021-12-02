@@ -21,10 +21,10 @@ public class GrapplingGun : MonoBehaviour {
     }
 
     void Update() {
-        if (Input.GetKeyDown("f")) {
+        if (Input.GetMouseButtonDown(1)) {
             StartGrapple();
         }
-        else if (Input.GetKeyUp("f")) {
+        else if (Input.GetMouseButtonUp(1)) {
             StopGrapple();
         }
     }
