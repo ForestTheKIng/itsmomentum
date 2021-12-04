@@ -17,7 +17,7 @@ namespace BigRookGames.Weapons
 
         // --- Config ---
         public bool autoFire;
-        public float shotDelay = .5f;
+        public float shotDelay = 0f;
         public bool rotate = true;
         public float rotationSpeed = .25f;
 
@@ -56,7 +56,13 @@ namespace BigRookGames.Weapons
             // --- Fires the weapon if the delay time period has passed since the last shot ---
             if (autoFire && ((timeLastFired + shotDelay) <= Time.time))
             {
-                FireWeapon();
+                Debug.Log("it works");
+                if (Input.GetMouseButtonDown(0))
+                {
+                    Debug.Log("it actually works");
+                    FireWeapon();
+
+                }
             }
 
             // --- Toggle scope based on public variable value ---
@@ -109,12 +115,16 @@ namespace BigRookGames.Weapons
                     AudioSource newAS = Instantiate(source);
                     if ((newAS = Instantiate(source)) != null && newAS.outputAudioMixerGroup != null && newAS.outputAudioMixerGroup.audioMixer != null)
                     {
+                        Debug.Log("This happede");
+
                         // --- Change pitch to give variation to repeated shots ---
                         newAS.outputAudioMixerGroup.audioMixer.SetFloat("Pitch", Random.Range(audioPitch.x, audioPitch.y));
                         newAS.pitch = Random.Range(audioPitch.x, audioPitch.y);
 
                         // --- Play the gunshot sound ---
                         newAS.PlayOneShot(GunShotClip);
+
+
 
                         // --- Remove after a few seconds. Test script only. When using in project I recommend using an object pool ---
                         Destroy(newAS.gameObject, 4);

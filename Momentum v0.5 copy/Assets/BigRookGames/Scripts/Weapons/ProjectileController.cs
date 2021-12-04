@@ -13,6 +13,12 @@ namespace BigRookGames.Weapons
         // --- Explosion VFX ---
         public GameObject rocketExplosion;
 
+        public GameObject player;
+        public float force = 700f;
+
+
+        public float radius = 5f;
+
         // --- Projectile Mesh ---
         public MeshRenderer projectileMesh;
 
@@ -42,11 +48,16 @@ namespace BigRookGames.Weapons
         /// <param name="collision"></param>
         private void OnCollisionEnter(Collision collision)
         {
+            
             // --- return if not enabled because OnCollision is still called if compoenent is disabled ---
             if (!enabled) return;
 
             // --- Explode when hitting an object and disable the projectile mesh ---
             Explode();
+
+            
+
+            
             projectileMesh.enabled = false;
             targetHit = true;
             inFlightAudioSource.Stop();
@@ -67,6 +78,17 @@ namespace BigRookGames.Weapons
         /// </summary>
         private void Explode()
         {
+            Collider[] colliders = Physics.OverlapSphere(transform.position,radius);
+
+            foreach (Collider nearbyObject in colliders)
+            {
+                Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
+                if (rb != null)
+                {
+                    rb.AddExplosionForce(force, transform.position, radius);;
+                }
+
+            }
             // --- Instantiate new explosion option. I would recommend using an object pool ---
             GameObject newExplosion = Instantiate(rocketExplosion, transform.position, rocketExplosion.transform.rotation, null);
 

@@ -7,20 +7,30 @@ public class EnemyHoam : MonoBehaviour
     public PlayerMovement movement;
     public Transform player;
 
+    public Material Mat;
+
     public Rigidbody rb;
     void OnTriggerStay (Collider other) 
     {
-        if (Input.GetKeyDown("f"))
+        if (other.tag == "Chainable")
         {
-            Debug.Log("key is f");
+            other.GetComponent<MeshRenderer> ().material = Mat;
 
-            if (other.tag == "Chainable")
+            Debug.Log("it is chainable");
+            if (Input.GetKeyDown("f"))
             {
-                Debug.Log("it is chainable");
+                Debug.Log("key is f");
                 player.position = other.transform.position;
+
                 Destroy(other.gameObject);
+
+
             }
+                
 
         }
+
+        
+
     }
 }
